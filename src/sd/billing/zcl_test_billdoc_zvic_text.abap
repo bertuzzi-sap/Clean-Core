@@ -27,7 +27,6 @@ CLASS zcl_test_billdoc_zvic_text IMPLEMENTATION.
         mo_cut->if_ex_badi_billingdoc_process~change_before_update(
           CHANGING ct_vbrk = lt_vbrk
                    ct_vbrp = lt_vbrp ).
-        cl_abap_unit_assert=>assert_subrc( exp = 0 ).
       CATCH cx_root INTO DATA(lx_err).
         cl_abap_unit_assert=>fail( lx_err->get_text( ) ).
     ENDTRY.
@@ -40,7 +39,6 @@ CLASS zcl_test_billdoc_zvic_text IMPLEMENTATION.
         mo_cut->if_ex_badi_billingdoc_process~change_before_update(
           CHANGING ct_vbrk = lt_vbrk
                    ct_vbrp = lt_vbrp ).
-        cl_abap_unit_assert=>assert_subrc( exp = 0 ).
       CATCH cx_root INTO DATA(lx_err).
         cl_abap_unit_assert=>fail( lx_err->get_text( ) ).
     ENDTRY.

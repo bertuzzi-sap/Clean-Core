@@ -50,12 +50,13 @@ CLASS zcl_im_billdoc_zvic_text IMPLEMENTATION.
   METHOD write_header_text.
     CHECK me->text_already_exists( iv_billing_doc ) = abap_false.
 
-    AUTHORITY-CHECK OBJECT 'S_DEVELOP'
-      ID 'DEVCLASS' DUMMY
-      ID 'OBJTYPE'  FIELD 'PROG'
-      ID 'OBJNAME'  DUMMY
-      ID 'P_GROUP'  DUMMY
-      ID 'ACTVT'    FIELD '02'.
+    AUTHORITY-CHECK OBJECT 'V_VBRK_AAT'
+      ID 'AUART' DUMMY
+      ID 'ACTVT' FIELD '01'.
+
+    IF sy-subrc <> 0.
+      RAISE EXCEPTION TYPE cx_sy_no_handler.
+    ENDIF.
 
     DATA(ls_header) = VALUE thead(
       tdobject = gc_text_object
