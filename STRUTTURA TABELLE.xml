@@ -1,0 +1,3281 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Vincenzo Russo</Author>
+  <LastAuthor>Davide Gambino</LastAuthor>
+  <LastPrinted>2026-05-12T09:08:08Z</LastPrinted>
+  <Created>2026-05-12T08:10:47Z</Created>
+  <LastSaved>2026-05-12T08:37:04Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>4550</WindowHeight>
+  <WindowWidth>14240</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ActiveSheet>3</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#156082"/>
+   </Borders>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#156082" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#156082" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#156082"/>
+   </Borders>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#156082" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Borders/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#156082" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#156082" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="ZFM_LIQ_T">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="91" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Width="113"/>
+   <Column ss:Width="52.5"/>
+   <Column ss:Width="123"/>
+   <Column ss:Width="39"/>
+   <Column ss:Width="74"/>
+   <Column ss:Width="240"/>
+   <Row>
+    <Cell><Data ss:Type="String">CAMPO</Data></Cell>
+    <Cell><Data ss:Type="String">CHIAVE</Data></Cell>
+    <Cell><Data ss:Type="String">ELEMENTO DATI</Data></Cell>
+    <Cell><Data ss:Type="String">TIPO</Data></Cell>
+    <Cell><Data ss:Type="String">LUNGHEZZA</Data></Cell>
+    <Cell><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">CLNT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Mandante</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Area finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTP_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_IMPUTAZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_IMPUTAZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo imputazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data numerazione del mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_INVIO_TESO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_INVIO_TESO</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data invio tesoreria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NOTE_MNDT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNOTE_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Note mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TESTO_BREVE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTESTOLIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="String">Testo breve causale liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAUSALE_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CAUSALE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell><Data ss:Type="String">Causale Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_PROP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROP</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno proposta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_PROPOSTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZPROPOSTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero Proposta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DIR_PROP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDIR_PROP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Direzione Proposta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NOTA_PROP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNOTA_PROPOSTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Note Proposta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_PROP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZTIPO_PROP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNO_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZNUM_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUMPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Numero provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZTIPO_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTIPOPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZDIR_PROVV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDIR_PROV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Direzione Provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZNOTE_PROVV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNOTE_PROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Note Provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZDATA_PROVV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_PROVVED</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNO_PROV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROVVPROR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno provvedimento proroga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZNUM_PROV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUMPROVVPROR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Numero provvedimento proroga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZTIPO_PROV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTIPOPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZDIR_PROVV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDIRPROVVPROR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">Direzione Provvedimento di proroga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZNOTE_PROVV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNOTEPROVVPROR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Note Provvedimento di proroga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZDATA_PROVV_PROR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATAPRPROROG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Data provvedimento di proroga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MAND_COPE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMAND_COPE</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato a copertura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_STATO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Stato della liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TOT_PAG_CAP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTOTPAGCAP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Totale pagamenti sul Capitolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DISP_CAS_CAP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDISP_CAS_CAP</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Disponibilità di cassa sul Capitolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZI_IDOC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_DOC</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">ID documentale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZLIVELLO_TER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZLIVELLO_TER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">255</Data></Cell>
+    <Cell><Data ss:Type="String">Livello territoriale.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZLOCALIZZAZIONE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZLOCALIZZAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Localizzazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">TIMS</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AUTOMATICA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFLAG_AUTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Creazione automatica</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_QUIET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data quietanzamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_BOLLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_BOLLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Bollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDATO_COPERTURA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDACOP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato a copertura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFSTLISTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFMSTLISTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Stato lista</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_ES_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_ES_PAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data esecuzione ordine pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZCONTR_GENERICI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCONTR_GEN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Soggetto a contributi generici</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZID_DOC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_DOC</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">255</Data></Cell>
+    <Cell><Data ss:Type="String">ID documentale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZUNAME_EDMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZUNAME_EDMA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Autore EDMA.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZGRUPPO_FOR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_GRUPPO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Gruppo Beneficiari</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCUP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCUP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CUP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">APQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZAPQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Accordo Programma Quadro</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PAGSPESESSR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZPAGSPESESSR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Pagamento spese SSR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EXART13</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDET_TUIR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Soggetto a Detrazione ex art.13 del TUIR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RITINAIL</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZRITINAIL</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Ritenuta INAIL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO_SOST</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT_SOST</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Mandato Sostituito</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO_SOST</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO_SOST</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato Sostituito</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZCDCOMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCDCOMP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Mancata compensazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">COD_DIR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DIREZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Direzione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSERVIZIO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CODICE_STRUTTURA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Struttura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_PROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_TIPO_PROTOCOLLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Protocollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNOPROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno di Protocollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNUM_PROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_PROT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">Numero protoccolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZCODASS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZASSESSORATO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Assessorato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZIDARCHIVIO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIDARCHIVIO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Id archivio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FLAG_VALID</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFLAG_VISTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Flag visto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_TRASM_RAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DT_TRASM_RAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data trasmissione in ragioneria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_LIMITE_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_LIMITE_PAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data limite pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNUM_REINTEGRO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_REINT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero flusso reintegro</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO_IN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT_IN</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Mandato Inesitato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO_IN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO_IN</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato Inesitato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDATO_SPLIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_MANDATO_SPLIT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato generato da Fatt. Att. con Split Payment</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_FIRMA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data firma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ESITO_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ICON_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Icona in campi testo (rappres. sostitutiva, alias)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAMBIO_VALUTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCAMBIO_VALUTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Cambio valuta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ID_FLUSSO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIDENTIFICATIVO_FLUSSO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">70</Data></Cell>
+    <Cell><Data ss:Type="String">Identificativo flusso</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZID_TOKEN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_TOKEN</Data></Cell>
+    <Cell><Data ss:Type="String">RAW</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">ID token</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">REVI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZREVISIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Revisione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GSBER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GSBER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Settore contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_R</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_R</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_RENDICONTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero rendiconto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NO_DURC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNO_DURC</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Gestione Esclusione DURC in Liquidazione</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ZFM_LIQ_R">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="90" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Width="110.5"/>
+   <Column ss:Width="52.5"/>
+   <Column ss:Width="154.5"/>
+   <Column ss:Width="39"/>
+   <Column ss:Width="74"/>
+   <Column ss:Width="241.5"/>
+   <Row>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">CAMPO</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">CHIAVE</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ELEMENTO DATI</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TIPO</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">LUNGHEZZA</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">CLNT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Mandante</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Area finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIPEX</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FM_FIPEX</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FISTL</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FISTL</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Centro di responsabilità</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GEBER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BP_GEBER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Fondi</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPEGNO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLNR_DY</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_IMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPOS</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCUP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCUP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CUP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZIMP_PER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_PER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero Impegno Perente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_IMP_PER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPOS</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BUKRS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BUKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Società</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BELNR_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero del documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WRBTR</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">Importo in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BLART</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BLART</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo di documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BLDAT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BLDAT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data documento nel documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BUDAT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BUDAT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data di registrazione nel documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_PAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BELNR_C</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento di pareggio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_DOC_PAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_BEN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_BENEF</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MOD_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">SCHZW_BSEG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Modalità di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">INSTANT</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">SEPA INSTANT CREDIT TRANSFER</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo banca partner</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPORTO_R</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_IMP_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZREG_FISCALE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZREG_FISCALE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Regime fiscale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario alternativo (id)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CODICE_BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_COD_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario alternativo (codice)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAUS_BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCAUS_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="String">Causale Beneficiario alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MOD_PAG_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">SCHZW_BSEG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Modalità di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BVTYP_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo banca partner</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSFCOD_SIOPE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSFCOD_SIOPE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Codice SIOPE (codice di bilancio)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PAREGGIO_PARZIALE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPAYPCCL</Data></Cell>
+    <Cell><Data ss:Type="String">DEC</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Importo percentuale pareggiato (piano di pagamento)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DOC_PAREGG_PARZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDOC_PAREGG_PARZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Doc. Pareggio Parziale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_PAREGG_PARZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_PAREGG_PARZ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Doc Paregg. Parz.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUMERO_QUIETANZA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">Numero quietanza</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_QUIETANZA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_QUIETANZA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data quietanza</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_QUIET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo quietanzato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Z_CONTO_FIN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CONTO_FIN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="String">Piano dei conti</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_VALITA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATAVALUTA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data Valuta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_PREV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_ERAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_VARIE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_PARTITA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPARTITA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero partita</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_MM</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">AWREF</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento di riferimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PRENOTAZIONE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZPRENOTAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Prenotazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">POS_PRENOT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_POSIZIONE_PRENOTAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione prenotazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_CERT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOCERT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno certificato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_CERT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_CERT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero certificato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">XBLNR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">XBLNR_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">Numero di rif. alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_IMPUTAZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_IMPUTAZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo imputazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STATO_MAND</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTATO_MAND</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Stato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZDIREZIONE_USNAM</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DIREZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Direzione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GJAHR_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPARTITA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero partita</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WRBTR</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">Importo in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GJAHR_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPRE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Nr. preacquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_NUM_RIGA</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Numero riga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EBELN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_EBELN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero del documento acquisti</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EBELP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_EBELP</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Numero posizione documento d'acquisto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZCOD_COMPLETA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_COMPLETA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">Codifica completa</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSF_MISSIONI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSF_MISSIONI</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Missione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSF_PROGRAMMI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSF_PROGRAMMI</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Programma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZ_TITOLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_TITOLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Titolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="String">IBAN (International Bank Account Number)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IBAN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="String">IBAN (International Bank Account Number)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_AVVISO_PAGOPA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNR_AVVISO_PAGOPA</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">Numero avviso PAGOPA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CODICE_FISCALE_ENTE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_FISC_ENTE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Codice fiscale ente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_GIROCONTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_GIROCONTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNR_GIROCONTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Giroconto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_ANNULLATA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_RIGA_ANNULLATA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Flag_riga_annullata</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">TIMS</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CDR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZCOD_STR_CDR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Struttura CdR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUOVO_DOC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CHAR1</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Indicatore a una posizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DOC_SOSTITUITO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSOSTITUITO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Documento sostituito</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RLID</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZRLID</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">RLID</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ID_POSIZIONE_BES</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDE_POSBES</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">38</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione BES</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNULLO_SINGOLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNULLO_SINGOLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Annullo Singolo</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ZFM_MAND_T">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="70" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:AutoFitWidth="0" ss:Width="144" ss:Span="1"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="217.5"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="343.5"/>
+   <Row>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">CAMPO</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">CHIAVE</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ELEMENTO DATI</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TIPO</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s81"><Data ss:Type="String">LUNGHEZZA</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+   </Row>
+   <Row ss:Index="3">
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">CLNT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandante</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Area finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZANNO_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZMANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_MANDATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data numerazione del mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_IMPUTAZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_IMPUTAZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo imputazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_INVIO_TESO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_INVIO_TESO</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data invio tesoreria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NOTE_MNDT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNOTE_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Note mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_MAND</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_MAND</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo Mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TESTO_BREVE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTESTOLIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Testo breve causale liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAUSALE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CAUSALE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Causale Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MAND_COPE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMAND_COPE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato a copertura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_STATO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Stato della liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TOT_PAG_CAP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTOTPAGCAP</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Totale pagamenti sul Capitolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DISP_CAS_CAP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDISP_CAS_CAP</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Disponibilità di cassa sul Capitolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZI_IDOC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_DOC</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">255</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">ID documentale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZLIVELLO_TER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZLIVELLO_TER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Livello territoriale.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZLOCALIZZAZIONE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZLOCALIZZAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Localizzazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_INS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">TIMS</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">TIMS</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AUTOMATICA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFLAG_AUTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Creazione automatica</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_QUIET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data quietanzamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_BOLLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_BOLLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Bollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SOSP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ICON_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Icona in campi testo (rappres. sostitutiva, alias)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDATO_COPERTURA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDACOP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato a copertura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFSTLISTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFMSTLISTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Stato lista</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_ES_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_ES_PAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data esecuzione ordine pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZCONTR_GENERICI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCONTR_GEN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Soggetto a contributi generici</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZID_DOC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_DOC</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">255</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">ID documentale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZUNAME_EDMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZUNAME_EDMA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Autore EDMA.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZGRUPPO_FOR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_GRUPPO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Gruppo Beneficiari</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCUP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCUP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CUP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">APQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZAPQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Accordo Programma Quadro</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PAGSPESESSR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZPAGSPESESSR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Pagamento spese SSR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EXART13</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDET_TUIR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Soggetto a Detrazione ex art.13 del TUIR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RITINAIL</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZRITINAIL</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Ritenuta INAIL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO_SOST</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT_SOST</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Mandato Sostituito</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO_SOST</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO_SOST</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato Sostituito</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZCDCOMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCDCOMP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Mancata compensazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">COD_DIR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DIREZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Direzione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSERVIZIO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CODICE_STRUTTURA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Struttura</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_PROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_TIPO_PROTOCOLLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Protocollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNOPROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno di Protocollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNUM_PROT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_PROT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero protoccolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZCODASS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZASSESSORATO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Assessorato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZIDARCHIVIO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIDARCHIVIO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Id archivio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FLAG_VALID</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFLAG_VISTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Flag visto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_TRASM_RAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DT_TRASM_RAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data trasmissione in ragioneria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_LIMITE_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_LIMITE_PAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data limite pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNUM_REINTEGRO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_REINT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero flusso reintegro</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO_IN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_MNDT_IN</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Mandato Inesitato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO_IN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZMANDATO_IN</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato Inesitato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDATO_SPLIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_MANDATO_SPLIT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato generato da Fatt. Att. con Split Payment</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_FIRMA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data firma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ESITO_FIRMA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ICON_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Icona in campi testo (rappres. sostitutiva, alias)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAMBIO_VALUTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCAMBIO_VALUTA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Cambio valuta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ID_FLUSSO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIDENTIFICATIVO_FLUSSO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">70</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Identificativo flusso</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNO_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZNUM_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUMPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZTIPO_PROV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTIPOPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZDIR_PROVV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDIR_PROV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Direzione Provvedimento</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R1C8</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ZFM_MAND_R">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="90" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:AutoFitWidth="0" ss:Width="301" ss:Span="1"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="253.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="224.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="144"/>
+   <Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="240"/>
+   <Column ss:AutoFitWidth="0" ss:Width="266.5"/>
+   <Row>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">CAMPO</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">CHIAVE</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ELEMENTO DATI</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TIPO</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s81"><Data ss:Type="String">LUNGHEZZA</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+   </Row>
+   <Row ss:Index="3">
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">CLNT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandante</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">FIKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Area finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZANNO_MNDT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_MANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZMANDATO</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_RIGA_MAND</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_RIGA_MAND</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Riga mandato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZN_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_RIGA_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZN_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTP_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIPEX</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FM_FIPEX</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FISTL</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FISTL</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Centro di responsabilità</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GEBER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BP_GEBER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Fondi</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPEGNO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLNR_DY</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_IMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPOS</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCUP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCUP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CUP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZIMP_PER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_PER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero Impegno Perente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_IMP_PER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPOS</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BUKRS</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BUKRS</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Società</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BELNR_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero del documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WRBTR</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BLART</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BLART</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo di documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BLDAT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BLDAT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data documento nel documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BUDAT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BUDAT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data di registrazione nel documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_PAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BELNR_C</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento di pareggio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_DOC_PAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_BEN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_BENEF</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MOD_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">SCHZW_BSEG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Modalità di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">INSTANT</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Sepa Instant Credit Transfer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo banca partner</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPORTO_R</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_IMP_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZREG_FISCALE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZREG_FISCALE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Regime fiscale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario alternativo (id)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CODICE_BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_COD_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario alternativo (codice)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAUS_BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCAUS_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Causale Beneficiario alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MOD_PAG_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">SCHZW_BSEG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Modalità di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">BVTYP_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BVTYP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo banca partner</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSFCOD_SIOPE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSFCOD_SIOPE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice SIOPE (codice di bilancio)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PAREGGIO_PARZIALE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPAYPCCL</Data></Cell>
+    <Cell><Data ss:Type="String">DEC</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo percentuale pareggiato (piano di pagamento)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DOC_PAREGG_PARZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDOC_PAREGG_PARZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Doc. Pareggio Parziale</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_PAREGG_PARZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNO_PAREGG_PARZ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Doc Paregg. Parz.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUMERO_QUIETANZA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero quietanza</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_QUIETANZA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_QUIETANZA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data quietanza</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_QUIET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_QUIET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo quietanzato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Z_CONTO_FIN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CONTO_FIN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Piano dei conti</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_VALITA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATAVALUTA</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Data Valuta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_PREV</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_ERAR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIT_VARIE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WT_WT1</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenuta d'acconto in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_PARTITA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPARTITA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero partita</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_MM</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">AWREF</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento di riferimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PRENOTAZIONE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZPRENOTAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Prenotazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">POS_PRENOT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_POSIZIONE_PRENOTAZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione prenotazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_CERT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNOCERT</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Anno certificato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_CERT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNUM_CERT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero certificato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">XBLNR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">XBLNR_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero di rif. alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_IMPUTAZ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_IMPUTAZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo imputazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STATO_MAND</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTATO_MAND</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Stato</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZDIREZIONE_USNAM</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DIREZIONE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Direzione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GJAHR_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPARTITA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero partita</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_DOC_IVA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WRBTR</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Importo in divisa documento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GJAHR_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPRE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Nr. preacquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_NUM_RIGA</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero riga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EBELN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_EBELN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero del documento acquisti</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">EBELP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_EBELP</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero posizione documento d'acquisto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZCOD_COMPLETA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_COMPLETA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codifica completa</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSF_MISSIONI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSF_MISSIONI</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Missione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZSF_PROGRAMMI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSF_PROGRAMMI</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Programma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZ_TITOLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_TITOLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Titolo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">IBAN (International Bank Account Number)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IBAN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">IBAN (International Bank Account Number)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_AVVISO_PAGOPA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNR_AVVISO_PAGOPA</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Numero avviso PAGOPA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CODICE_FISCALE_ENTE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZCOD_FISC_ENTE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice fiscale ente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_GIROCONTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NR_GIROCONTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNR_GIROCONTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Giroconto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_ANNULLATA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_RIGA_ANNULLATA</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Flag_riga_annullata</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">USNAM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">USNAM</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Nome dell'utente</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUDT_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUDT</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Giorno in cui è stato acquisito il documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CPUTM_MOD</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">CPUTM</Data></Cell>
+    <Cell><Data ss:Type="String">TIMS</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Ora di acquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CDR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZCOD_STR_CDR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Codice Struttura CdR</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RLID</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZRLID</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">RLID</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ZDASH_LIQ">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="51" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Width="119"/>
+   <Column ss:Width="52.5"/>
+   <Column ss:Width="118"/>
+   <Column ss:Width="39"/>
+   <Column ss:Width="74"/>
+   <Column ss:Width="274.5"/>
+   <Row>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">CAMPO</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">CHIAVE</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ELEMENTO DATI</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">TIPO</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">LUNGHEZZA</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">DESCRIZIONE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">MANDT</Data></Cell>
+    <Cell><Data ss:Type="String">CLNT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Mandante</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZANNO_TOKEN</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZID_TOKEN</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZID_TOKEN</Data></Cell>
+    <Cell><Data ss:Type="String">RAW</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">ID token</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">N_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+    <Cell><Data ss:Type="String">ZN_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DT_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDT_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTP_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FIPEX</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FM_FIPEX</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione finanziaria</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZFISTL</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FISTL</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Centro di responsabilità</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GEBER</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BP_GEBER</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Fondi</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPEGNO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLNR_DY</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">RIGA_IMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">KBLPOS</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione documento: fondi accantonati</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_ASSU</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNO_COMP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCIG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCIG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CIG</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSFCUP</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZSFCUP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Codice CUP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMPORTO_R</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_IMP_RIGA_LIQ</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo riga liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_NET</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_NET</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo netto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IMP_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZIMP_RIT</Data></Cell>
+    <Cell><Data ss:Type="String">CURR</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Importo ritenute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CAUSALE_LIQ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_CAUSALE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell><Data ss:Type="String">Causale Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPO_BOLLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPO_BOLLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Tipo Bollo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_BEN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_BENEF</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario di pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STCD1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">STCD1</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Cod. Fisc.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STCD2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">STCD2</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">Partita IVA 2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNAME</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNAME</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario Denominazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">CODICE_BEN_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZFM_COD_BEN_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario alternativo (codice)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STCD1_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTCD1</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Codice fiscale beneficiario alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">STCD2_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSTCD2</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">Partita iva beneficiario alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZNAMEA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNAME</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell><Data ss:Type="String">Beneficiario Denominazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZTIPOL_PIGNORAMENTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZTIPOL_PIGNORAMENTO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Tipologia pratica</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZDATA_PIGNORAMENTO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_PIGNORAMENTO</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data Apertura Pratica</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">BELNR_D</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero del documento contabile</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA_DOC_FI</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">XBLNRE_ALT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">XBLNR_ALT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">Numero di rif. alternativo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TRIPLETTA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZID_TRIP</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">ID Tripletta</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNULLATO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">FMRE_ERLKZ</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Codice di conclusione per posizione documento in fondi acc.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NO_DURC</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNO_DURC</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Gestione Esclusione DURC in Liquidazione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">COD_RIT</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">WITHT</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Codice per tipo di ritenuta d'acconto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">IBAN</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="String">IBAN (International Bank Account Number)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">GJAHR_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">GJAHR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Esercizio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_PRE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZNPRE</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Nr. preacquisizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_RIGA</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_NUM_RIGA</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Numero riga</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">NUM_PROVVED</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSXNUMPROVV</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Numero provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZZANNPR</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZZANNPR</Data></Cell>
+    <Cell><Data ss:Type="String">NUMC</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Anno Provvedimento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ZSOSP_RAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZSOSP_RAG</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Sospensione ragioneria in corso</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">TIPOBOLLODESCRIZIONE</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Z_DESCR</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell><Data ss:Type="String">Descrizione</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ID_POSIZIONE_BES</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDE_POSBES</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">38</Data></Cell>
+    <Cell><Data ss:Type="String">Posizione BES</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DATA_ES_PAG</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZDATA_ES_PAG</Data></Cell>
+    <Cell><Data ss:Type="String">DATS</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">Data esecuzione ordine pagamento</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">ANNULLO_SINGOLO</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ZANNULLO_SINGOLO</Data></Cell>
+    <Cell><Data ss:Type="String">CHAR</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Annullo Singolo</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>40</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
